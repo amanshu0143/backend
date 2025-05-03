@@ -14,9 +14,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Secret keys - use environment variables
-const SECRET_KEY = process.env.SECRET_KEY || 'your-secret-key-for-order-verification';
-const JWT_SECRET = process.env.JWT_SECRET || 'your-jwt-secret-key'; // Add this line for JWT secret
-const JWT_EXPIRY = process.env.JWT_EXPIRY || '1m'; // Token expiry time (e.g., '1h', '7d')
+const SECRET_KEY = process.env.SECRET_KEY ;
+const JWT_SECRET = process.env.JWT_SECRET ;
+const JWT_EXPIRY = process.env.JWT_EXPIRY ; 
 
 // Middleware
 app.use(cors());
